@@ -1,0 +1,519 @@
+# This is a KT starter filter
+
+#########(001)Currency_Stackable
+#########(002)Unique
+#########(003)Uncut
+#########(004)Essence
+#########(005)Rune
+#########(006)Jewel
+#########(007)Breach
+#########(008)Delirium
+#########(009)Expedition
+#########(010)Waystone
+#########(011)Trials
+#########(012)Gear
+
+
+
+#####(001)Currency_Stackable
+
+# GOD TIER
+Show 
+    Class == "Stackable Currency"
+    BaseType == "Mirror of Kalandra" "Mirror Shard"
+    SetFontSize 50
+    SetTextColor 255 0 0 255
+    SetBorderColor 255 0 0 255
+    SetBackgroundColor 255 255 255 255
+    CustomAlertSound "kt_sound\zawarudo.wav" 255
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+Show 
+    Class == "Stackable Currency"
+    BaseType == "Perfect Jeweller's Orb" "Divine orb"
+    SetFontSize 50
+    SetTextColor 255 0 0 255
+    SetBorderColor 255 0 0 255
+    SetBackgroundColor 255 255 255 255
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star    
+
+# Currency T3
+Show 
+    StackSize >= 1
+    Class == "Stackable Currency"
+    BaseType == "Exalted Orb" "Chaos Orb" 
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 0 70 30 255
+    SetBackgroundColor 240 90 35 220
+    CustomAlertSound "kt_sound\handofgod.wav" 175
+    PlayEffect Orange
+    MinimapIcon 1 Orange Hexagon
+
+# Currency T2
+Show 
+    StackSize >= 1
+    Class == "Stackable Currency"
+    BaseType == "Ancient Orb" "Orb of Annulment" "Orb of Alchemy" "Vaal Orb" "Orb of Chance" "Regal Orb"
+    SetFontSize 40
+    SetTextColor 255 255 255 255
+    SetBorderColor 0 70 30 255
+    SetBackgroundColor 240 90 35 220
+    CustomAlertSound "kt_sound\redemption.wav" 255
+    PlayEffect White
+    MinimapIcon 1 Orange Hexagon
+
+
+# Currency T1.5
+Show 
+    StackSize >= 1
+    Class == "Stackable Currency"
+    BaseType == "Gemcutter's Prism" "Glassblower's Bauble" "Greater Jeweller's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher" "Artificer's Orb" "Armourer's Scrap"  
+    SetFontSize 38
+    SetTextColor 255 255 255 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 210 127 0 220
+    MinimapIcon 2 Orange Circle
+    PlayAlertSound 3 150
+    PlayEffect White
+
+# Currency T1
+Show 
+    StackSize >= 1
+    Class == "Stackable Currency"
+    BaseType == "Orb of Augmentation" "Orb of Transmutation" "Orb of Alteration" "Transmutation Shard" "Lesser Jeweller's Orb"
+    SetFontSize 35
+    SetTextColor 0 0 0 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 184 178 151 255
+    MinimapIcon 2 Grey Circle
+
+# Currency T1
+Show 
+    StackSize >= 1
+    Class == "Stackable Currency"
+    BaseType == "Regal Shard" "Chance Shard" "Sacred Orb" "Annulment Shard" "Alchemy Shard"
+    SetFontSize 40
+    SetTextColor 0 0 0 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 184 178 151 255
+    MinimapIcon 2 Grey Circle
+
+#######################################
+Hide 
+    BaseType == "Scroll of Wisdom"
+#######################################
+
+
+#####(003)Uncut
+# Uncut
+Show 
+    StackSize >= 1
+    BaseType == "Uncut Skill Gem" "Uncut Spirit Gem"
+    ItemLevel >= 19
+    SetFontSize 39
+    SetTextColor 128 255 166 255
+    SetBorderColor 128 255 166 255
+    SetBackgroundColor 41 92 80 255
+    CustomAlertSound "kt_sound\levelup.wav" 255
+    PlayEffect White
+
+Show 
+    StackSize >= 1
+    BaseType == "Uncut Support Gem"
+    ItemLevel >= 1
+    SetFontSize 39
+    SetTextColor 128 255 166 255
+    SetBorderColor 128 255 166 255
+    SetBackgroundColor 41 92 80 255
+    CustomAlertSound "kt_sound\levelup.wav" 255
+    PlayEffect White
+
+#####(004)Essence
+
+# Essence
+Show 
+    StackSize >= 1
+    Class == "Stackable Currency"
+    BaseType == "Essence of the Body" "Essence of Enhancement" "Essence of Flames" "Essence of Electricity" "Essence of Battle" "Essence of Haste" "Essence of the Mind" "Essence of Torment" "Essence of Ice" "Essence of Ruin" "Essence of Sorcery" "Essence of the Infinite" 
+    SetFontSize 40
+    SetTextColor 255 201 107 220
+    SetBorderColor 255 201 107 220
+    SetBackgroundColor 0 0 0 220
+    MinimapIcon 2 Yellow Circle
+    PlayAlertSound 2 150
+
+# Greater Essence
+Show 
+    StackSize >= 1
+    Class == "Stackable Currency"
+    BaseType == "Greater Essence of the Body" "Greater Essence of Enhancement" "Greater Essence of Flames" "Greater Essence of Electricity" "Greater Essence of Battle" "Greater Essence of Haste" "Greater Essence of the Mind" "Greater Essence of Torment" "Greater Essence of Ice" "Greater Essence of Ruin" "Greater Essence of Sorcery" "Greater Essence of the Infinite"
+    SetFontSize 45
+    SetTextColor 255 201 107 220
+    SetBorderColor 255 201 107 220
+    SetBackgroundColor 255 211 56 255
+    MinimapIcon 2 Yellow Circle
+    PlayEffect Yellow
+    PlayAlertSound 2 150
+
+#####(005)Rune
+
+# Runes
+Show 
+    StackSize >= 1
+    BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" "Body Rune" "Mind Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" "Vision Rune"
+    SetFontSize 39
+    SetTextColor 60 255 250 255
+    SetBorderColor 60 255 250 255
+    SetBackgroundColor 104 111 140 250
+    MinimapIcon 2 Grey Circle
+    CustomAlertSound "kt_sound\cap.wav" 255
+    PlayEffect White
+
+Show 
+    StackSize >= 1
+    BaseType == "Iron Rune"
+    SetFontSize 45
+    SetTextColor 60 255 250 255
+    SetBorderColor 255 0 0 255
+    SetBackgroundColor 104 111 140 250
+    MinimapIcon 1 Grey Circle
+    CustomAlertSound "kt_sound\hammer.wav" 230
+    PlayEffect White
+
+#####(006)Jewel
+
+# Special A Tier - League specific socketables and jewels
+Show 
+BaseType "Soul Core" "Timeless"
+SetTextColor 0 240 190
+SetBorderColor 0 240 190
+SetFontSize 40
+MinimapIcon 2 Cyan Triangle
+PlayEffect Cyan
+CustomAlertSound "kt_sound\repair.wav" 255
+
+# Special A Tier - Sanctum Relics
+Show 
+Class "Relic"
+SetTextColor 0 240 190
+SetBorderColor 0 240 190
+SetFontSize 40
+MinimapIcon 2 Cyan Triangle
+PlayEffect Cyan
+CustomAlertSound "kt_sound\repair.wav" 255
+
+# Special A Tier - Rare Jewels
+Show
+Class "Jewel"
+Rarity Rare
+SetTextColor 220 220 0 255
+SetBorderColor 220 220 0 255
+SetBackgroundColor 47 0 74 255
+SetFontSize 40
+MinimapIcon 2 Cyan Triangle
+PlayEffect Cyan
+CustomAlertSound "kt_sound\repair.wav" 255
+
+# Special B Tier - Any Jewels
+Show
+Class "Jewel"
+Rarity Magic
+SetTextColor 220 220 0 255
+SetBorderColor 220 220 0 255
+SetBackgroundColor 47 0 74 255
+SetFontSize 40
+PlayEffect Cyan Temp
+CustomAlertSound "kt_sound\repair.wav" 255
+
+# Special B Tier - Any Charms
+Show 
+BaseType " Charm"
+SetTextColor 0 240 190
+
+######(007)Breach
+
+# Breach
+Show 
+    StackSize >= 1
+    Class == "Stackable Currency"
+    BaseType == "Adaptive Catalyst" "Chayula's Catalyst" "Flesh Catalyst" "Reaver Catalyst" "Skittering Catalyst" "Uul-Netol's Catalyst" "Breach Precursor Tablet" "Carapace Catalyst" "Esh's Catalyst" "Neural Catalyst" "Sibilant Catalyst" "Tul's Catalyst" "Xoph's Catalyst"
+    SetFontSize 38
+    SetTextColor 0 0 0 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 249 66 158 220
+    MinimapIcon 2 Purple Circle
+    PlayAlertSound 2 150
+
+Show 
+    StackSize >= 1
+    BaseType == "Breachstone" "Breach Splinter" "Breach Ring"
+    SetFontSize 40
+    SetTextColor 255 255 255 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 249 66 158 220
+    MinimapIcon 2 Purple Circle
+    PlayAlertSound 2 150
+
+#####(008)Delirium
+
+# Delirium distilled
+Show 
+    StackSize >= 1
+    Class == "Stackable Currency"
+    BaseType == "Distilled Ire" "Distilled Greed" "Distilled Envy" "Distilled Despair"  "Distilled Guilt" "Distilled Paranoia" "Distilled Disgust" "Distilled Fear" 
+    SetFontSize 38
+    SetTextColor 0 0 0 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 128 109 90 220
+    MinimapIcon 2 Grey Circle
+    PlayAlertSound 2 150
+
+# Delirium Splinter Simulacrum
+Show 
+    StackSize >= 1
+    BaseType == "Simulacrum Splinter" "Simulacrum" "Distilled Suffering" "Distilled Isolation"
+    SetFontSize 40
+    SetTextColor 255 255 255 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 128 109 90 220
+    MinimapIcon 2 Grey Circle
+    PlayAlertSound 2 150
+
+
+#####(009)Expedition
+
+# Expedition
+Show 
+    StackSize >= 1
+    Class == "Stackable Currency"
+    BaseType == "Black Scythe Artifact" "Broken Circle Artifact" "Exotic Coinage" "Expedition Logbook" "Order Artifact" "Sun Artifact" "Expedition Precursor Tablet" "Expedition Logbook"
+    SetFontSize 35
+    SetTextColor 255 255 255 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 0 102 102 220
+    MinimapIcon 2 Grey Circle
+    PlayAlertSound 2 150
+
+######(010)Waystone
+
+Hide 
+    StackSize >= 1
+    BaseType "Waystone (Tier 1)" "Waystone (Tier 2)" "Waystone (Tier 3)" "Waystone (Tier 4)" "Waystone (Tier 5)" "Waystone (Tier 6)" "Waystone (Tier 7)" "Waystone (Tier 8)" "Waystone (Tier 9)" "Waystone (Tier 10)" "Waystone (Tier 11)"
+
+Show 
+    StackSize >= 1
+    BaseType "Waystone (Tier 15)"
+    SetFontSize 42
+    SetTextColor 191 0 0 255
+    SetBorderColor 191 0 0 255
+    SetBackgroundColor 0 0 0 255
+    MinimapIcon 1 White Square
+    PlayAlertSound 4 150
+
+Show 
+    StackSize >= 1
+    Class == "Waystones" "Tablet"
+    SetFontSize 40
+    SetTextColor 255 255 255 255
+    SetBorderColor 191 0 0 255
+    SetBackgroundColor 0 0 0 255
+    MinimapIcon 2 White Square
+    PlayAlertSound 4 150
+
+
+
+#####(011)Trials
+
+# Trials
+Show 
+    StackSize >= 1
+    BaseType "Inscribed Ultimatum" "Djinn Barya" "Cunning Barya" "Strength Barya" "Will Barya" "Time Barya" " Fate" " Key" " Fragment" "Fragment "
+    SetFontSize 40
+    SetTextColor 255 40 0 255
+    SetBorderColor 255 40 0 255
+    SetBackgroundColor 255 220 160 255
+    MinimapIcon 2 Yellow Square
+    PlayEffect Yellow
+    CustomAlertSound "kt_sound\leveluphireling.wav" 165
+
+Show 
+    StackSize >= 1
+    Class Pinnacle Keys
+    SetFontSize 40
+    SetTextColor 255 40 0 255
+    SetBorderColor 255 40 0 255
+    SetBackgroundColor 255 220 160 255
+    MinimapIcon 2 Yellow Square
+    PlayEffect Yellow
+    CustomAlertSound "kt_sound\leveluphireling.wav" 165
+
+Show 
+    StackSize >= 1
+    BaseType "Maven's Invitation: " "Chronicle of Atzoatl" " Invitation"
+    SetFontSize 50
+    SetTextColor 255 40 0 255
+    SetBorderColor 255 40 0 255
+    SetBackgroundColor 255 220 160 255
+    MinimapIcon 2 Yellow Square
+    PlayEffect Yellow
+    CustomAlertSound "kt_sound\leveluphireling.wav" 255
+
+######(012)Gear
+
+#--------------------------
+# Salvage Quality
+#--------------------------
+
+# Salvage
+Show
+Quality > 10
+Class "Helmets" "Boots" "Gloves" "Body Armours" "Rings" "Amulets" "Belts"
+Rarity "Normal" "Magic" "Rare"
+SetBorderColor 60 250 200 255
+SetBackgroundColor 130 98 98 220
+SetFontSize 35
+
+#--------------------------
+# Value Rares
+#--------------------------
+
+Show
+Quality > 10
+BaseType "Ultimate "
+Rarity Magic 
+Class Flask
+SetFontSize 40
+SetBorderColor 0 204 0 255
+ItemLevel >= 65
+
+Show
+BaseType "Ultimate "
+Rarity Magic 
+Class Flask
+SetFontSize 37
+SetBorderColor 200 200 200 255
+ItemLevel >= 65
+
+Show
+Class "Helmets" "Boots" "Gloves" "Body Armours"
+Rarity Rare
+SetFontSize 37
+SetTextColor 233 206 75 255
+SetBorderColor 200 200 200 255
+ItemLevel >= 72
+
+Show
+Rarity "Rare" 
+BaseType "Expert Dualstring Bow"
+SetFontSize 40
+SetTextColor 255 215 0 255
+SetBorderColor  0 204 0 255
+SetBackgroundColor 173 0 225 255
+ItemLevel >= 72
+
+Show
+Rarity "Rare" 
+BaseType "Expert "
+Class "Claws" "Daggers""Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Rings" "Amulets" "Belts"
+SetFontSize 37
+SetTextColor 255 215 0 255
+SetBorderColor  0 204 0 255
+SetBackgroundColor 50 120 90 255
+ItemLevel >= 72
+
+Show
+Class "Rings" "Amulets" "Belts"
+Rarity Rare
+SetFontSize 37
+SetTextColor 233 206 75 255
+SetBorderColor 0 204 0 255
+ItemLevel >= 72
+
+#--------------------------
+# Value Uniques
+#--------------------------
+
+# NICE TRY DYDY
+
+Show
+    Rarity "Unique"
+    BaseType "Heavy Belt" "Utility Belt"
+    SetFontSize 45
+    SetTextColor 135 135 135 255
+    SetBorderColor 255 40 0 255
+    SetBackgroundColor 86 0 0 245
+    MinimapIcon 1 Orange Star
+    PlayEffect Orange
+    PlayAlertSound 10 150
+Show
+    Rarity Normal
+    BaseType "Heavy Belt"
+    SetFontSize 39
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 40 0 255
+    SetBackgroundColor 86 0 0 255
+    ItemLevel >= 69
+
+Show
+    Rarity "Unique"
+    Class "Amulet" "Rings" "Flask"
+    SetFontSize 45
+    SetBorderColor 255 40 0 255
+    SetBackgroundColor 86 0 0 245
+    MinimapIcon 1 Orange Star
+    PlayEffect Orange
+    PlayAlertSound 10 150
+
+######(013)Golds
+
+# Golds
+Show 
+    StackSize >= 2001
+    BaseType == "Gold"
+    SetFontSize 45
+    SetTextColor 235 200 110 255
+    SetBorderColor 235 200 110 255
+    SetBackgroundColor 20 20 0 255
+    PlayAlertSound 2 300
+    PlayEffect Orange
+    MinimapIcon 1 Yellow Cross
+    CustomAlertSound "kt_sound\diablodropsound.mp3" 180
+
+Show 
+    StackSize >= 500
+    BaseType == "Gold"
+    SetFontSize 35
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 20 20 0 255
+    PlayEffect Orange Temp
+    MinimapIcon 1 White Cross
+
+Show 
+    StackSize <= 500
+    BaseType == "Gold"
+    SetFontSize 35
+    SetTextColor 255 255 255 170
+    SetBorderColor 255 255 255 170
+    SetBackgroundColor 20 20 0 170
+    PlayEffect Orange Temp
+
+#####(002)Unique
+
+# Unique 
+Show 
+    Rarity Unique 
+    SetFontSize 38
+    SetBorderColor 255 94 0 255
+    MinimapIcon 1 Orange Star
+    PlayEffect Orange
+    CustomAlertSound "kt_sound\sometime.mp3" 230
+
+Hide
+Rarity "Normal" "Magic" "Rare"
+SetFontSize 25
+SetBackgroundColor 0 0 0 0
