@@ -1,4 +1,4 @@
-![alt text](https://image.noelshack.com/fichiers/2024/52/6/1735405444-capture-d-cran-2024-12-28-180229.png)
+![alt text](https://image.noelshack.com/fichiers/2024/52/7/1735472773-filter-v2-8.jpg)
 # POE2_Filter_Start-Endgame-by-KT
 Is my personal filter for Path of Exile 2 (With custom sounds)
 (Special thx to Neversink for for certain parts of code)
