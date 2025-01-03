@@ -25,12 +25,8 @@ Download the latest release .zip and just drag and drop "kt_sound" and "kt_filte
 -Trials Fragments is Hilight with custom sounds  
 -Pinnacle keys,Invitations is Hilight with custom sounds  
 -Rare with Quality for salvage is Hilight  
--Flask (Ultimate ) is Hilight  
--Rares with full  Energy Shield base is Hilight !  
 -Rares with <= ilvl 71 is hide  
--Weapons rare with <= ilvl 71 is hide and >= ilvl 72 is Hilight  
--Rings,Amulet,Belts >= ilvl 72 is Hilight  
--Uniques type Heavy Belt,Utility Belt is Hilight and custom sounds   
--Golds StackSize >= 2001 is hilight with custom sounds  
+-Uniques type Heavy Belt,Utility Belt etc.. is Hilight and custom sounds   
+-Golds StackSize
 
 
